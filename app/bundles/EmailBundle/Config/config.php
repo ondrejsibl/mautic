@@ -274,6 +274,13 @@ return [
                     'mautic.email.repository.stat',
                 ],
             ],
+            'mautic.email.subscriber.form_action' => [
+                'class'     => \Mautic\EmailBundle\EventListener\FormActionSubscriber::class,
+                'arguments' => [
+                    'mautic.lead.model.lead',
+                    'mautic.email.model.email',
+                ],
+            ],
         ],
         'forms' => [
             'mautic.form.type.email' => [
