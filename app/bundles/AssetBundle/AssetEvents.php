@@ -108,4 +108,24 @@ final class AssetEvents
      * @var string
      */
     const ON_CAMPAIGN_TRIGGER_DECISION = 'mautic.asset.on_campaign_trigger_decision';
+
+    /**
+     * The mautic.email.on_form_action_download_start event is fired when form actions are executed.
+     *
+     * The event listener receives a
+     * Mautic\FormBundle\Event\FormActionEvent
+     *
+     * @var string
+     */
+    const ON_FORM_ACTION_DOWNLOAD_START = 'mautic.asset.on_form_action_download_start';
+
+    /**
+     * The mautic.email.on_form_action_download_finish event is fired when form actions are executed.
+     *
+     * The event listener receives a
+     * Mautic\FormBundle\Event\FormActionEvent
+     *
+     * @var string
+     */
+    const ON_FORM_ACTION_DOWNLOAD_FINISH = 'mautic.asset.on_form_action_download_finish';
 }

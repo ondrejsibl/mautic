@@ -234,4 +234,14 @@ final class EmailEvents
      * @var string
      */
     const ON_TRANSPORT_WEBHOOK = 'mautic.email.on_transport_webhook';
+
+    /**
+     * The mautic.email.on_form_action_send event is fired when form actions are executed.
+     *
+     * The event listener receives a
+     * Mautic\FormBundle\Event\FormActionEvent
+     *
+     * @var string
+     */
+    const ON_FORM_ACTION_SEND = 'mautic.email.on_form_action_send';
 }
