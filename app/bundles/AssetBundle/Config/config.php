@@ -139,6 +139,17 @@ return [
                     'mautic.asset.model.asset',
                 ],
             ],
+            'mautic.asset.form_action.subscriber' => [
+                'class'     => 'Mautic\AssetBundle\EventListener\FormActionSubscriber',
+                'arguments' => [
+                    'mautic.asset.model.asset',
+                    'translator',
+                    'mautic.helper.template.analytics',
+                    'templating.helper.assets',
+                    'mautic.helper.core_parameters',
+                    'mautic.helper.templating',
+                ],
+            ],
         ],
         'forms' => [
             'mautic.form.type.asset' => [
